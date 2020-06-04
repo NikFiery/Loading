@@ -1,0 +1,21 @@
+@media (max-width: 1100px) {
+    .container__title {
+        transition: 0.8s;
+        transform: rotate(360deg);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .container__link {
+        display: flex;
+        position: absolute;
+        width: 100px;
+        transform: rotate(360deg);
+        top: 64%;
+        left: 37%;
+        transition: 1.2s;
+    }
+}

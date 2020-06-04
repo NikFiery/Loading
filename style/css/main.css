@@ -1,0 +1,166 @@
+* {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-size: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container__title {
+  width: 30%;
+  height: 30%;
+  background: #4a4a55;
+  background: radial-gradient(circle, #4a4a55 7%, #00000f 71%);
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  border-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  color: #1f1f1f;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-bottom: 9px solid #1f1f1f;
+}
+
+.container__link {
+  display: none;
+}
+
+h1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: 'Loading...';
+  color: #ffc72c;
+  border-bottom: 9px solid #ffc72c;
+  overflow: hidden;
+  -webkit-animation: loading 5s infinite linear;
+          animation: loading 5s infinite linear;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.container__top {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__top--left {
+  width: 49%;
+  height: 95%;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  margin-left: initial;
+}
+
+.container__top--right {
+  width: 49%;
+  height: 95%;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  margin-right: initial;
+}
+
+.container__bottom {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__bottom--left {
+  width: 49%;
+  height: 95%;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  margin-left: initial;
+  margin-top: auto;
+}
+
+.container__bottom--right {
+  width: 49%;
+  height: 95%;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  margin-right: initial;
+  margin-top: auto;
+}
+
+@media (max-width: 1100px) {
+  .container__title {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  .container__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 100px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    top: 64%;
+    left: 37%;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+}
+/*# sourceMappingURL=main.css.map */
